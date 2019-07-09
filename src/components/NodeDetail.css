@@ -1,0 +1,11 @@
+.node-detail .inside-donut text {
+    text-anchor: middle;
+    alignment-baseline: central;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.node-detail .abstract-glyph {
+    display: inline-block;
+    margin: 3px;
+}

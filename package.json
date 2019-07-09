@@ -1,0 +1,44 @@
+{
+  "name": "focus-explainer",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "express": "^4.16.2",
+    "express-http-proxy": "^1.1.0",
+    "npm-run-all": "^4.1.2",
+    "react-scripts": "1.0.14"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cert-icons": "git+https://stash.pnnl.gov/scm/aimsquint/cert-icons.git",
+    "crossfilter2": "^1.4.5",
+    "d3": "^4.13.0",
+    "d3-hexbin": "^0.2.2",
+    "d3-scale-chromatic": "^1.1.1",
+    "font-awesome": "^4.7.0",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.4",
+    "material-ui": "^1.0.0-beta.41",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "pq2": "0.0.4",
+    "react": "^16.0.0",
+    "react-color": "^2.13.8",
+    "react-d3-chart": "git+https://stash.pnnl.gov/scm/aimsquint/react-d3-chart.git",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-select": "^1.2.1",
+    "react-vis": "^1.8.1",
+    "redux": "^4.0.3",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "scripts": {
+    "start": "npm-run-all -p start-js start-api",
+    "start-js": "react-scripts start",
+    "start-api": "python server.py --debug --port=3105",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3105"
+}
